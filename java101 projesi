@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+  public class Main {
+    public static void main(String[] args){
+
+        int mat, fzk, kmy, tr, trh, mzk;   // değişkenleri tanımlayalım
+
+        Scanner input= new Scanner(System.in);  // scanner sınıfını tanımlayalım
+
+        System.out.print("Matematik notunuz: ");    // kullanıcıdan değer alalım
+        mat = input.nextInt();
+
+        System.out.print("Fizik notunuz: ");
+        fzk = input.nextInt();
+
+        System.out.print("Kimya notunuz: ");
+        kmy = input.nextInt();
+
+        System.out.print("Türkçe notunuz: ");
+        tr = input.nextInt();
+
+        System.out.print("Tarih notunuz: ");
+        trh = input.nextInt();
+
+        System.out.print("Müzik notunuz: ");
+        mzk = input.nextInt();
+
+        int toplam = (mat+fzk+kmy+tr+trh+mzk);
+        double ortalama = toplam/6.0;
+        System.out.println("Ortalamanız:" +ortalama);
+        System.out.println(ortalama>60 ? "Geçti" : "Kaldı");
+
+
+
+    }
+
+}
